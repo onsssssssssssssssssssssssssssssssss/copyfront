@@ -1,0 +1,261 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+/*--------------------------------------------------------------
+  #cadre géneral
+  --------------------------------------------------------------*/
+  .cadregeneral{
+    border: solid;
+    width: 1140px;
+      margin: auto;
+          height: 1170px;
+            border-bottom-left-radius: 25px;
+              border-bottom-right-radius: 25px;
+  
+  }
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #18d26e;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+  /*--------------------------------------------------------------
+# OK-NOK
+--------------------------------------------------------------*/
+.listok{
+    width: 500px;
+    background-color:#000645;
+    color: white;
+    height: 30px;
+  }
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  
+  #header {
+    padding: 15px 0;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+      background:#000645;
+  
+  }
+  
+  
+  #header #logo h1 {
+    font-size: 25px;
+    margin: 0;
+    padding: inherit;
+    line-height: 1;
+    font-family: "Nixia", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 155px;
+  }
+  
+  #header #logo h1 a,
+  #header #logo h1 a:hover {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 10px;
+  }
+  
+  #header #logo img {
+    padding: 0;
+    margin: 0;
+  }
+  /*--------------------------------------------------------------
+# Intro Section 
+--------------------------------------------------------------*/
+
+#intro {
+    display: table;
+    width: 100%;
+    height: 55vh;
+  }
+  
+  .intro-container{
+      margin-top: 130px;
+  }
+  
+  
+  #intro2{
+    display: table;
+    width: 100%;
+    margin-left: auto;
+  }
+  /*--------------------------------------------------------------
+  # button ed
+  --------------------------------------------------------------*/
+  .filrebtn{
+    background-color:#2A2F89;
+    color: white;
+    width: 100px;
+    font-weight: bold;
+    border: #1829C5;
+  }
+  .searchbtn{
+    border:#191970 ;
+    background-color: white;
+    border: solid;
+    border-radius: 5px;
+  }
+  .notebtn{
+  color: white;
+    background-color: #000645;
+  }
+  .btnarrow{
+    color:#191970 ;
+    background-color: white;
+    border: none;
+  }
+  .btnarrowdown{
+    color:#9370DB;
+    background-color: white;
+    border: none;
+  }
+  .contentclient{
+      width: 100%;
+      margin: auto;
+      padding-bottom: 20px;
+      padding-left: 15px;
+      margin-top: 20px;
+      border-color: #191970;
+      border: solid;
+      border-radius: 5px;
+  
+  }
+  .cadregeneral2 {
+      border: solid;
+      width: 1040px;
+      margin: auto;
+      height: 350px;
+          background-color:#000645;
+      }
+      .suivij{
+        color: black;
+        text-decoration: none;
+      }
+      .suivij:hover{
+        color: white;
+  text-decoration: none; 
+  background-color: #000645;   }
+  
+  .ajoutbtn{
+    background-color:#6770CD ;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+  }
+  .ajoutbtn1{
+    background-color:#6770CD ;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    width: 200px;
+    height:45px;
+    border-radius: 5px;
+    margin-left: 350px;
+  }
+  .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      padding-bottom: inherit;
+      margin-left: -15px;
+  }
+  /*--------------------------------------------------------------
+  #tous les boutons input
+  --------------------------------------------------------------*/
+  .eb-input{
+    border-radius: 10px;
+      border-color:#000645;
+      width: 250px;
+height: 35px;
+}
+  /*--------------------------------------------------------------
+  #les premiers 
+  --------------------------------------------------------------*/
+.btnsection{
+    background-color: white;
+    border-color:#191970;
+    border-radius: 10px;
+    width: 160px;
+    height: 39px;
+    font-size: 12px;
+    font-family: Poppins;
+  }
+  .btnsection:hover{
+      background-color:#000645;
+      color: white;
+      border-radius: 10px;
+  
+  }
+  
+  /*--------------------------------------------------------------
+  #nombreprojet
+  --------------------------------------------------------------*/
+  .btnnombreprojet{
+    border-radius: 10px;
+      border-color: #000645;
+      width:160px;
+      height: 35px;
+  }
+/* Conclusion2
+--------------------------------*/
+
+#Conclusion{
+    padding: 60px 0;
+  }
+  .custom-select{
+    width: 500px;
+  }
+  .searchbtn {
+    border: #191970;
+    background-color: white;
+    border: solid;
+    border-radius: 5px;
+}
+table{
+     border: 1px solid #002D62;
+     border-radius:5px;
+      padding-bottom:25px;
+  }

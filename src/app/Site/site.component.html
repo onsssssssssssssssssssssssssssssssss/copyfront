@@ -1,0 +1,694 @@
+<div >
+<table style="  width: -webkit-fill-available;margin-left: 20px;" >
+  <tr >
+    <th class="row2">Référence <br> Code client </th>
+    <th class="row2">Libéllé </th>
+    <th class="row2">Type de  <br>commande </th>
+    <th class="row2">Montant</th>
+    <th class="row2">Montant  <br>réceptionné</th>
+    <th class="row2">Date</th>
+    <th class="row2">ID EB</th> 
+    <th class="row2">Statut</th> 
+    <th class="row2">commentaire</th> 
+
+  </tr>
+  <tr style="height:50px;"*ngFor="let c of details">
+      <th  class="row1">{{ c.id }}</th>
+      <th   class="row1">{{ c.eb }}</th>
+      <th  class="row1">{{ c.codesite }}</th>
+      <th  class="row1">{{ c.numcommande }}</th>
+      <th  class="row1">{{ c.CDP }}</th>
+      <th  class="row1">{{ c.Designation }}</th>
+      <th class="row1">{{ c.DatecommandeBS }}</th>
+      <th class="row1">{{ c.Datefin }}</th>
+      <th class="row1">{{ c.commentaire }}</th>
+
+  </tr>
+ </table>
+<section id="call-to-action" >
+    <div class="container" >
+      <h1 style="font-weight: bold;">
+        Informations generales<br> du site
+      </h1>
+                <hr width="50px" style="
+                display: block;
+                height: 1px;
+                border: 0;
+                border-top: 10px solid #191970;
+                margin: 0.5em 0;
+                padding: 0;"> 
+    </div>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-3" id="row2">
+            <label style="
+            margin-top:10px;
+            font-weight: bold;">
+            Hauteur Pylone/Pylonet:
+            </label>
+                <input type="text" name="" class="eb-input" disabled="disabled">
+        </div>
+        <div class="col-md-3" id="row2">
+            <label style="
+            margin-top:10px;
+            font-weight: bold;">
+            Modele de Pylone:
+            </label>
+                <input type="text" name="" class="eb-input" disabled="disabled">
+        </div>
+        <div class="col-md-3" >
+            <label style="
+            margin-top:10px;
+            ">
+            Dernier sous traitement:
+            </label>
+                 <input type="text" name="" class="eb-input" disabled="disabled">
+        </div>
+        <div class="col-md-3" id="row2">
+            <label style="
+            margin-top: 10px;
+            width: 1000px;
+            font-size: x-small;">
+            Date Derniére Demande Client  avec Debut APD validé:
+            </label>
+            <input type="text" name="" class="eb-input" disabled="disabled">
+        </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-3" id="row2">
+           <label style="margin-top:10px;
+           font-weight: bold;">
+            Dernier Client :
+           </label>
+                 <input type="text" name="" class="eb-input" disabled="disabled">
+        </div>
+        <div class="col-md-3" id="row2">
+           <label style="
+           margin-top:10px;
+           font-weight: bold;">
+           Date de la derniére NDC validé:
+           </label>
+           <input type="date" name="" class="eb-input" disabled="disabled">
+        </div>               
+    </div>
+  </div>
+  </section>
+  <!--==========================
+     Capacité /Resérve  du site :
+    ============================-->
+<section id="skills">
+  <div class="container">
+     <h1 style="
+     margin-top:100px;
+     color: black;
+     font-weight: bold;">
+     Capacité /Resérve <br> du site :
+     </h1>
+             <hr width="50px" style="
+             display: block; 
+             height: 1px;
+             border: 0;
+             border-top: 10px solid #191970;
+             margin: 0.5em 0;"> 
+  </div>
+
+<div class="container">
+<div class="row">
+  <div class="col-md-3" id="row2">
+                <label style="
+                margin-top:10px;
+                font-weight: bold;">
+                capacité du pylone <br>voilure m² a l'achat :
+                </label>
+                    <input type="text" name="" class="eb-input" disabled="disabled">
+  </div>
+  <div class="col-md-3" id="row2">
+               <label style="
+               margin-top:10px;
+               font-weight: bold;">
+               Derniére capacité du pylone  <br> en voilure m²:
+               </label>
+                    <input type="text" name="" class="eb-input" disabled="disabled">
+  </div>
+  <div class="col-md-3" id="row2">
+               <label style="
+               margin-top:10px;
+               margin-bottom: 33px;
+               font-weight: bold;">
+               Nombre Renfort realisé:
+               </label>
+                   <input type="text" name="" class="eb-input" disabled="disabled">
+  </div>
+                        
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+  <div class="col-md-3" id="row2">
+             <label style="
+             margin-top:10px;
+             font-weight: bold;">
+             Date du derniérer renfort sur <br> le pylone massif :
+             </label>
+                 <input type="text" name="" class="eb-input" disabled="disabled">
+  </div>
+  <div class="col-md-3" id="row2">
+              <label style="
+              margin-top:10px;
+              font-weight: bold;">
+              Date du derniérer renfort sur <br> le pylone stucture :
+              </label>
+                  <input type="text" name="" class="eb-input" disabled="disabled">
+  </div>
+</div>
+</div>
+
+</section>
+<section id="skills">
+ 
+    </section>
+    <section id="intro2">
+  
+      <div style="margin-left: 20px;    margin-top: 60px;">
+         <h1 style="font-weight: bold;">
+          Suivi des jalons :
+         </h1>
+                   <hr width="50px" style="
+                   display: block;
+                   height: 1px;
+                   border: 0;
+                   border-top: 10px solid #191970;
+                   margin: 0.5em 0;
+                   padding: 0;"> </div>
+     </section>
+     <!--Intro Buttoons-->
+     
+         <!--==========================
+           Informations gteneral du site 
+         ============================-->
+     
+     
+      
+         <table class="table1">
+         <tr>
+             <th class="row1">
+                 
+             </th>
+                     <th class="row1">Prévisionnelle</th>
+                       <th class="row1">Prévisionnelle</th>
+                     <th class="row1">Traitement Aryatowers  </th>
+     
+     
+         </tr>
+          <tr>
+               <th class="row1">Date commande client</th>
+               <th class="row1"><input type="date" name="" style="width:200px;border-radius: 5px;"></th>
+               <th class="row1"><input type="date" name="" style="width:200px;border-radius: 5px;"></th>
+               <th class="row1"><input type="text" name="" style="width:200px;border-radius: 5px;"></th>
+         </tr>
+          <tr>
+               <th class="row1">Date commande MOE</th>
+               <th class="row1"><input type="date" name="" style="width:200px;border-radius: 5px;"></th>
+               <th class="row1"><input type="date" name="" style="width:200px;border-radius: 5px;"></th>
+               <th class="row1" class="row1"><input type="text" name="" style="width: 200px;border-radius: 5px;"></th>
+     
+     
+         </tr>
+         <tr>
+               <th class="row1">Livraison MOE</th>
+               <th class="row1"><input type="date" name="" style="width:200px;border-radius: 5px;"></th>
+               <th class="row1"><input type="date" name="" style="width:200px;border-radius: 5px;"></th>
+               <th class="row1"></th>
+     
+     
+         </tr>
+     
+         <tr>
+               <th class="row1">Livraison client Date fin</th>
+               <th class="row1"><input type="date" name="" style="width: 200px;border-radius: 5px;"></th>
+               <th class="row1"><input type="date" name="" style="width:200px;border-radius: 5px;"></th>
+               <th class="row1"><input type="text" name="" style="width:200px;border-radius: 5px;"></th>
+     
+     
+         </tr>
+     </table>
+     <section id="intro2">
+      
+          <div style="margin-bottom: 30px;margin-top: 30px;" >
+             <h1 style="font-weight: bold;">
+             Info commande Client
+             </h1>
+                       <hr width="50px" style="
+                       display: block;
+                       height: 1px;
+                       border: 0;
+                       border-top: 10px solid #191970;
+                       margin: 0.5em 0;
+                       padding: 0;"> </div>
+         </section>
+         <!--Intro Buttoons-->
+         
+             <!--==========================
+               Informations gteneral du site 
+             ============================-->
+             <div style="margin-bottom: 20px;">
+                <button class="filrebtn" >
+                  <div>
+                    <span class="material-icons">
+                      arrow_drop_up  </span>  Filtre
+                    </div>
+                </button>       
+                    
+                     <button style="background-color: white;padding: 0;border: none;margin-left: 8px; margin-right: 8px;" >
+                      <span class="material-icons">
+                            search
+                            </span>
+                             </button>
+                     <button style="background-color: #2A2F89;border: #1829C5; margin-right: 10px;" >
+                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 40">
+               <rect id="Rectangle_638" data-name="Rectangle 638" width="32" height="40" rx="4" fill="#2a2f89"/><svg xmlns="http://www.w3.org/2000/svg" width="30" height="33" viewBox="0 0 21.008 20.903">
+               <g id="edit" transform="translate(0 -0.261)">
+                 <path id="Tracé_316" data-name="Tracé 316" d="M19.39,50.254a.523.523,0,0,0-.523.523v4.646a1.571,1.571,0,0,1-1.57,1.57H2.616a1.571,1.571,0,0,1-1.57-1.57V41.788a1.571,1.571,0,0,1,1.57-1.57H7.262a.523.523,0,0,0,0-1.046H2.616A2.619,2.619,0,0,0,0,41.788V55.423a2.619,2.619,0,0,0,2.616,2.616H17.3a2.619,2.619,0,0,0,2.616-2.616V50.777A.523.523,0,0,0,19.39,50.254Zm0,0" transform="translate(0 -36.875)" fill="#fff"/>
+                 <path id="Tracé_317" data-name="Tracé 317" d="M122.235.95a2.354,2.354,0,0,0-3.33,0l-9.335,9.335a.523.523,0,0,0-.134.23l-1.228,4.432a.523.523,0,0,0,.644.644l4.432-1.228a.523.523,0,0,0,.23-.134l9.334-9.335a2.357,2.357,0,0,0,0-3.33Zm-11.524,9.675,7.64-7.64,2.464,2.464-7.64,7.64Zm-.492.988,1.968,1.969-2.723.754Zm11.891-7.458-.555.555-2.464-2.464.555-.555a1.308,1.308,0,0,1,1.85,0l.614.614A1.31,1.31,0,0,1,122.109,4.154Zm0,0" transform="translate(-102.53)" fill="#fff"/>
+               </g>
+             </svg>
+             
+             </svg>
+                     </button>
+                     <button style="  background-color: #2A2F89;border: #1829C5;
+             " >
+                       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 43 40">
+               <rect id="Rectangle_710" data-name="Rectangle 710" width="33" height="30" rx="4" fill="#2a2f89"/>
+               <svg xmlns="http://www.w3.org/2000/svg" width="42" height="40" viewBox="0 0 29.734 29.734">
+               <g id="refresh" transform="translate(0 0)">
+                 <path id="Tracé_448" data-name="Tracé 448"
+                  d="M3.571,16.238a11.764,11.764,0,0,1-.087-1.371A11.335,11.335,0,0,1,22.5,6.487l-1,1.022a.891.891,0,0,0-.226.871.912.912,0,0,0,.662.592c.175.035,5.936,1.891,5.569,1.818a.881.881,0,0,0,1.028-1.028c-.035-.176-1.311-6.575-1.237-6.208a.863.863,0,0,0-1.463-.436l-.854.836A14.877,14.877,0,0,0,0,14.867V14.9c0,.491.022.871.049,1.161a.871.871,0,0,0,.7.776l1.79.358a.872.872,0,0,0,1.036-.958Zm0,0" fill="#fff"/>
+                 <path id="Tracé_449" data-name="Tracé 449" d="M48.251,215.8l-1.795-.366a.872.872,0,0,0-1.039.959,11.858,11.858,0,0,1,.09,1.379,11.321,11.321,0,0,1-19.019,8.363l1-1a.891.891,0,0,0,.226-.871.911.911,0,0,0-.662-.592c-.175-.035-5.936-1.891-5.569-1.818a.854.854,0,0,0-.784.244.868.868,0,0,0-.244.784l1.237,6.15a.872.872,0,0,0,.61.662.837.837,0,0,0,.854-.226l.836-.836a14.844,14.844,0,0,0,25-10.854v-.052c0-.386-.014-.765-.046-1.142a.871.871,0,0,0-.694-.779Zm0,0" transform="translate(-19.258 -202.911)" fill="#fff"/>
+               </g>
+             </svg>
+             </svg>
+          
+                     </button>
+             
+                     <button class="btnarrow">
+             <svg xmlns="http://www.w3.org/2000/svg" width="19.834" height="22.697" viewBox="0 0 19.834 22.697">
+               <g id="down-arrow" transform="translate(-8.862 22.697) rotate(180)">
+                 <g id="Groupe_22" data-name="Groupe 22" transform="translate(-28.696)">
+                   <path id="Tracé_315" data-name="Tracé 315" d="M52.1,12.582a.474.474,0,0,0-.437-.292h-5.18V.473A.473.473,0,0,0,46.013,0H38.449a.473.473,0,0,0-.473.473V12.29h-5.2a.472.472,0,0,0-.335.806l9.43,9.462a.474.474,0,0,0,.669,0L52,13.1A.472.472,0,0,0,52.1,12.582Z" transform="translate(-32.304)" fill="#2a2f89"/>
+                 </g>
+               </g>
+             </svg>
+                     </button>
+                     <button class="btnarrowdown">
+             <svg id="Groupe_22" data-name="Groupe 22" xmlns="http://www.w3.org/2000/svg" width="19.834" height="22.697" viewBox="0 0 19.834 22.697">
+               <path id="Tracé_315" data-name="Tracé 315" d="M52.1,12.582a.474.474,0,0,0-.437-.292h-5.18V.473A.473.473,0,0,0,46.013,0H38.449a.473.473,0,0,0-.473.473V12.29h-5.2a.472.472,0,0,0-.335.806l9.43,9.462a.474.474,0,0,0,.669,0L52,13.1A.472.472,0,0,0,52.1,12.582Z" transform="translate(-32.304)" fill="#6770cd"/>
+             </svg>
+                     </button>
+                     <button style="
+                     background-color:white;
+                     color: #191970;
+                     border: none;">
+           <span class="material-icons">
+            arrow_back_ios
+            </span>
+            
+             <label style="font-size:14px;margin-left: 15px;">0 - 0 de 0</label>
+                     </button>
+                     <button style="
+                     background-color:white;
+                     color: #191970;
+                     border: none;">
+           <span class="material-icons">
+            arrow_forward_ios
+            </span>
+                     </button>
+                     <button style="  background-color: #2A2F89;border: #1829C5;padding: 0;
+             ">
+             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" viewBox="0 0 32 40">
+               <g id="Groupe_75" data-name="Groupe 75" transform="translate(-1175 -5598)">
+                 <rect id="Rectangle_639" data-name="Rectangle 639" width="28" height="40" rx="4" transform="translate(1175 5598)" fill="#2a2f89"/>
+                 <g id="download" transform="translate(1157.058 5606.98)">
+                   <path id="Tracé_216" data-name="Tracé 216" d="M75.376,213.057h-.66c0,.255,0,1.111,0,1.356l.656,0a.677.677,0,1,0,0-1.353Z" transform="translate(-49.183 -203.101)" fill="#fff"/>
+                   <path id="Tracé_217" data-name="Tracé 217" d="M36.89,160.57H23.122v8.024H36.89Zm-10.7,4.741-.661,0v1.763H24.6v-4.988h1.6a1.611,1.611,0,1,1,0,3.222Zm3.949,1.7c-.317.006-1.612.011-1.612.011l-.012-4.863h0v-.007H30.1c1.23,0,2.056.978,2.056,2.434A2.2,2.2,0,0,1,30.142,167.008Zm5.274-3.97H33.784v1.039h1.5v.935h-1.5v2.05H32.85V162.1h2.565Z" transform="translate(0 -153.066)" fill="#fff"/>
+                   <path id="Tracé_218" data-name="Tracé 218" d="M159.323,214.339h-.644l.016,3c.237,0,.5,0,.652-.006.546-.01,1.1-.474,1.1-1.491C160.444,215.114,160.15,214.339,159.323,214.339Z" transform="translate(-129.222 -204.323)" fill="#fff"/>
+                   <path id="Tracé_219" data-name="Tracé 219" d="M64.18,3.55,61.5,6.231H64.18Z" transform="translate(-36.584 -3.384)" fill="#fff"/>
+                   <path id="Tracé_220" data-name="Tracé 220" d="M75.272,0H62.2V4.249H57.95V6.1H71.493V16.93H57.95v5.128H72.893l-1.73-2.282h2.482V12.27h1.628Z" transform="translate(-33.2)" fill="#fff"/>
+                   <path id="Tracé_221" data-name="Tracé 221" d="M404,300.066V292.56h-1.853v7.506h-1.062l1.988,2.623,1.988-2.623Z" transform="translate(-360.298 -278.888)" fill="#fff"/>
+                 </g>
+               </g>
+             </svg>
+                     </button>
+                </div>
+             <table class="tab" style="    width: -webkit-fill-available;">
+             <tr>
+              
+                         <th class="row2">No° <br> Commande</th>
+                           <th class="row2">Total HT</th>
+                         <th class="row2">Total TTC</th>
+                  <th class="row2">Date Commande BS</th>
+                  <th class="row2">Commande
+         CDP Client</th>
+                  <th class="row2">CDP Arya</th>
+                  <th class="row2">CDP Client</th>
+         
+         
+         
+         
+             </tr>
+              <tr>
+                   <th class="row1"></th>
+                   <th class="row1"></th>
+                   <th class="row1"></th>
+                   <th class="row1"></th>
+             </tr> 
+         </table>
+            <section id="intro2">
+           
+          <div style="margin-bottom: 30px;margin-top: 30px;" >
+             <h1 style="font-weight: bold;">
+         Info commande MOE    </h1>
+                       <hr width="50px" style="
+                       display: block;
+                       height: 1px;
+                       border: 0;
+                       border-top: 10px solid #191970;
+                       margin: 0.5em 0;
+                       padding: 0;"> </div>
+         </section>
+         <!--Intro Buttoons-->
+         
+             <!--==========================
+               Informations gteneral du site 
+             ============================-->
+             <div style="margin-bottom: 20px;">
+              <button class="filrebtn" >
+                <div>
+                  <span class="material-icons">
+                    arrow_drop_up </span>   Filtre
+                  </div>
+              </button>       
+                  
+                   <button style="background-color: white;padding: 0;border: none;margin-left: 8px; margin-right: 8px;" >
+                    <span class="material-icons">
+                          search
+                          </span>
+                           </button>
+                   <button style="background-color: #2A2F89;border: #1829C5; margin-right: 10px;" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 40">
+             <rect id="Rectangle_638" data-name="Rectangle 638" width="32" height="40" rx="4" fill="#2a2f89"/><svg xmlns="http://www.w3.org/2000/svg" width="30" height="33" viewBox="0 0 21.008 20.903">
+             <g id="edit" transform="translate(0 -0.261)">
+               <path id="Tracé_316" data-name="Tracé 316" d="M19.39,50.254a.523.523,0,0,0-.523.523v4.646a1.571,1.571,0,0,1-1.57,1.57H2.616a1.571,1.571,0,0,1-1.57-1.57V41.788a1.571,1.571,0,0,1,1.57-1.57H7.262a.523.523,0,0,0,0-1.046H2.616A2.619,2.619,0,0,0,0,41.788V55.423a2.619,2.619,0,0,0,2.616,2.616H17.3a2.619,2.619,0,0,0,2.616-2.616V50.777A.523.523,0,0,0,19.39,50.254Zm0,0" transform="translate(0 -36.875)" fill="#fff"/>
+               <path id="Tracé_317" data-name="Tracé 317" d="M122.235.95a2.354,2.354,0,0,0-3.33,0l-9.335,9.335a.523.523,0,0,0-.134.23l-1.228,4.432a.523.523,0,0,0,.644.644l4.432-1.228a.523.523,0,0,0,.23-.134l9.334-9.335a2.357,2.357,0,0,0,0-3.33Zm-11.524,9.675,7.64-7.64,2.464,2.464-7.64,7.64Zm-.492.988,1.968,1.969-2.723.754Zm11.891-7.458-.555.555-2.464-2.464.555-.555a1.308,1.308,0,0,1,1.85,0l.614.614A1.31,1.31,0,0,1,122.109,4.154Zm0,0" transform="translate(-102.53)" fill="#fff"/>
+             </g>
+           </svg>
+           
+           </svg>
+                   </button>
+                   <button style="  background-color: #2A2F89;border: #1829C5;
+           " >
+                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 43 40">
+             <rect id="Rectangle_710" data-name="Rectangle 710" width="33" height="30" rx="4" fill="#2a2f89"/>
+             <svg xmlns="http://www.w3.org/2000/svg" width="42" height="40" viewBox="0 0 29.734 29.734">
+             <g id="refresh" transform="translate(0 0)">
+               <path id="Tracé_448" data-name="Tracé 448"
+                d="M3.571,16.238a11.764,11.764,0,0,1-.087-1.371A11.335,11.335,0,0,1,22.5,6.487l-1,1.022a.891.891,0,0,0-.226.871.912.912,0,0,0,.662.592c.175.035,5.936,1.891,5.569,1.818a.881.881,0,0,0,1.028-1.028c-.035-.176-1.311-6.575-1.237-6.208a.863.863,0,0,0-1.463-.436l-.854.836A14.877,14.877,0,0,0,0,14.867V14.9c0,.491.022.871.049,1.161a.871.871,0,0,0,.7.776l1.79.358a.872.872,0,0,0,1.036-.958Zm0,0" fill="#fff"/>
+               <path id="Tracé_449" data-name="Tracé 449" d="M48.251,215.8l-1.795-.366a.872.872,0,0,0-1.039.959,11.858,11.858,0,0,1,.09,1.379,11.321,11.321,0,0,1-19.019,8.363l1-1a.891.891,0,0,0,.226-.871.911.911,0,0,0-.662-.592c-.175-.035-5.936-1.891-5.569-1.818a.854.854,0,0,0-.784.244.868.868,0,0,0-.244.784l1.237,6.15a.872.872,0,0,0,.61.662.837.837,0,0,0,.854-.226l.836-.836a14.844,14.844,0,0,0,25-10.854v-.052c0-.386-.014-.765-.046-1.142a.871.871,0,0,0-.694-.779Zm0,0" transform="translate(-19.258 -202.911)" fill="#fff"/>
+             </g>
+           </svg>
+           </svg>
+        
+                   </button>
+           
+                   <button class="btnarrow">
+           <svg xmlns="http://www.w3.org/2000/svg" width="19.834" height="22.697" viewBox="0 0 19.834 22.697">
+             <g id="down-arrow" transform="translate(-8.862 22.697) rotate(180)">
+               <g id="Groupe_22" data-name="Groupe 22" transform="translate(-28.696)">
+                 <path id="Tracé_315" data-name="Tracé 315" d="M52.1,12.582a.474.474,0,0,0-.437-.292h-5.18V.473A.473.473,0,0,0,46.013,0H38.449a.473.473,0,0,0-.473.473V12.29h-5.2a.472.472,0,0,0-.335.806l9.43,9.462a.474.474,0,0,0,.669,0L52,13.1A.472.472,0,0,0,52.1,12.582Z" transform="translate(-32.304)" fill="#2a2f89"/>
+               </g>
+             </g>
+           </svg>
+                   </button>
+                   <button class="btnarrowdown">
+           <svg id="Groupe_22" data-name="Groupe 22" xmlns="http://www.w3.org/2000/svg" width="19.834" height="22.697" viewBox="0 0 19.834 22.697">
+             <path id="Tracé_315" data-name="Tracé 315" d="M52.1,12.582a.474.474,0,0,0-.437-.292h-5.18V.473A.473.473,0,0,0,46.013,0H38.449a.473.473,0,0,0-.473.473V12.29h-5.2a.472.472,0,0,0-.335.806l9.43,9.462a.474.474,0,0,0,.669,0L52,13.1A.472.472,0,0,0,52.1,12.582Z" transform="translate(-32.304)" fill="#6770cd"/>
+           </svg>
+                   </button>
+                   <button style="
+                   background-color:white;
+                   color: #191970;
+                   border: none;">
+         <span class="material-icons">
+          arrow_back_ios
+          </span>
+          
+           <label style="font-size:14px;margin-left: 15px;">0 - 0 de 0</label>
+                   </button>
+                   <button style="
+                   background-color:white;
+                   color: #191970;
+                   border: none;">
+         <span class="material-icons">
+          arrow_forward_ios
+          </span>
+                   </button>
+                   <button style="  background-color: #2A2F89;border: #1829C5;padding: 0;
+           ">
+           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" viewBox="0 0 32 40">
+             <g id="Groupe_75" data-name="Groupe 75" transform="translate(-1175 -5598)">
+               <rect id="Rectangle_639" data-name="Rectangle 639" width="28" height="40" rx="4" transform="translate(1175 5598)" fill="#2a2f89"/>
+               <g id="download" transform="translate(1157.058 5606.98)">
+                 <path id="Tracé_216" data-name="Tracé 216" d="M75.376,213.057h-.66c0,.255,0,1.111,0,1.356l.656,0a.677.677,0,1,0,0-1.353Z" transform="translate(-49.183 -203.101)" fill="#fff"/>
+                 <path id="Tracé_217" data-name="Tracé 217" d="M36.89,160.57H23.122v8.024H36.89Zm-10.7,4.741-.661,0v1.763H24.6v-4.988h1.6a1.611,1.611,0,1,1,0,3.222Zm3.949,1.7c-.317.006-1.612.011-1.612.011l-.012-4.863h0v-.007H30.1c1.23,0,2.056.978,2.056,2.434A2.2,2.2,0,0,1,30.142,167.008Zm5.274-3.97H33.784v1.039h1.5v.935h-1.5v2.05H32.85V162.1h2.565Z" transform="translate(0 -153.066)" fill="#fff"/>
+                 <path id="Tracé_218" data-name="Tracé 218" d="M159.323,214.339h-.644l.016,3c.237,0,.5,0,.652-.006.546-.01,1.1-.474,1.1-1.491C160.444,215.114,160.15,214.339,159.323,214.339Z" transform="translate(-129.222 -204.323)" fill="#fff"/>
+                 <path id="Tracé_219" data-name="Tracé 219" d="M64.18,3.55,61.5,6.231H64.18Z" transform="translate(-36.584 -3.384)" fill="#fff"/>
+                 <path id="Tracé_220" data-name="Tracé 220" d="M75.272,0H62.2V4.249H57.95V6.1H71.493V16.93H57.95v5.128H72.893l-1.73-2.282h2.482V12.27h1.628Z" transform="translate(-33.2)" fill="#fff"/>
+                 <path id="Tracé_221" data-name="Tracé 221" d="M404,300.066V292.56h-1.853v7.506h-1.062l1.988,2.623,1.988-2.623Z" transform="translate(-360.298 -278.888)" fill="#fff"/>
+               </g>
+             </g>
+           </svg>
+                   </button>
+              </div>
+             <table class="tabx" style="    width: -webkit-fill-available;" >
+             <tr>
+              
+                         <th class="row3">Comma <br>ID  </th>
+                           <th class="row3">ID</th>
+                         <th class="row3">EB</th>
+                  <th class="row3">MOE</th>
+                  <th class="row3">N° Commande</th>
+                  <th class="row3">Prestation</th>
+                  <th class="row3">Montant HT</th>
+            <th class="row3">Montant TTC</th>
+             </tr>
+              <tr>
+                   <th class="row1"></th>
+                   <th class="row1"></th>
+                   <th class="row1"></th>
+                   <th class="row1"></th>
+             </tr>
+         </table> 
+         <section id="intro2">
+  
+          <div style="margin-bottom: 30px;margin-top: 50px;" >
+             <h1 style="font-weight: bold;">
+         Liste des projets    </h1>
+                       <hr width="50px" style="
+                       display: block;
+                       height: 1px;
+                       border: 0;
+                       border-top: 10px solid #191970;
+                       margin: 0.5em 0;
+                       padding: 0;"> </div>
+         </section>
+         <!--Intro Buttoons-->
+         
+             <!--==========================
+               Informations gteneral du site 
+             ============================-->
+             <div style="margin-bottom: 20px;">
+              <button class="filrebtn" >
+                <div>
+                  <span class="material-icons">
+                    arrow_drop_up </span>Filtre
+                  </div>
+              </button>       
+                  
+                   <button style="background-color: white;padding: 0;border: none;margin-left: 8px; margin-right: 8px;" >
+                    <span class="material-icons">
+                          search
+                          </span> <input type="text" style="margin-bottom:5px"  >
+                           </button>
+                   <button style="background-color: #2A2F89;border: #1829C5; margin-right: 10px;" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 40">
+             <rect id="Rectangle_638" data-name="Rectangle 638" width="32" height="40" rx="4" fill="#2a2f89"/><svg xmlns="http://www.w3.org/2000/svg" width="30" height="33" viewBox="0 0 21.008 20.903">
+             <g id="edit" transform="translate(0 -0.261)">
+               <path id="Tracé_316" data-name="Tracé 316" d="M19.39,50.254a.523.523,0,0,0-.523.523v4.646a1.571,1.571,0,0,1-1.57,1.57H2.616a1.571,1.571,0,0,1-1.57-1.57V41.788a1.571,1.571,0,0,1,1.57-1.57H7.262a.523.523,0,0,0,0-1.046H2.616A2.619,2.619,0,0,0,0,41.788V55.423a2.619,2.619,0,0,0,2.616,2.616H17.3a2.619,2.619,0,0,0,2.616-2.616V50.777A.523.523,0,0,0,19.39,50.254Zm0,0" transform="translate(0 -36.875)" fill="#fff"/>
+               <path id="Tracé_317" data-name="Tracé 317" d="M122.235.95a2.354,2.354,0,0,0-3.33,0l-9.335,9.335a.523.523,0,0,0-.134.23l-1.228,4.432a.523.523,0,0,0,.644.644l4.432-1.228a.523.523,0,0,0,.23-.134l9.334-9.335a2.357,2.357,0,0,0,0-3.33Zm-11.524,9.675,7.64-7.64,2.464,2.464-7.64,7.64Zm-.492.988,1.968,1.969-2.723.754Zm11.891-7.458-.555.555-2.464-2.464.555-.555a1.308,1.308,0,0,1,1.85,0l.614.614A1.31,1.31,0,0,1,122.109,4.154Zm0,0" transform="translate(-102.53)" fill="#fff"/>
+             </g>
+           </svg>
+           
+           </svg>
+                   </button>
+                   <button style="  background-color: #2A2F89;border: #1829C5;
+           " >
+                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 43 40">
+             <rect id="Rectangle_710" data-name="Rectangle 710" width="33" height="30" rx="4" fill="#2a2f89"/>
+             <svg xmlns="http://www.w3.org/2000/svg" width="42" height="40" viewBox="0 0 29.734 29.734">
+             <g id="refresh" transform="translate(0 0)">
+               <path id="Tracé_448" data-name="Tracé 448"
+                d="M3.571,16.238a11.764,11.764,0,0,1-.087-1.371A11.335,11.335,0,0,1,22.5,6.487l-1,1.022a.891.891,0,0,0-.226.871.912.912,0,0,0,.662.592c.175.035,5.936,1.891,5.569,1.818a.881.881,0,0,0,1.028-1.028c-.035-.176-1.311-6.575-1.237-6.208a.863.863,0,0,0-1.463-.436l-.854.836A14.877,14.877,0,0,0,0,14.867V14.9c0,.491.022.871.049,1.161a.871.871,0,0,0,.7.776l1.79.358a.872.872,0,0,0,1.036-.958Zm0,0" fill="#fff"/>
+               <path id="Tracé_449" data-name="Tracé 449" d="M48.251,215.8l-1.795-.366a.872.872,0,0,0-1.039.959,11.858,11.858,0,0,1,.09,1.379,11.321,11.321,0,0,1-19.019,8.363l1-1a.891.891,0,0,0,.226-.871.911.911,0,0,0-.662-.592c-.175-.035-5.936-1.891-5.569-1.818a.854.854,0,0,0-.784.244.868.868,0,0,0-.244.784l1.237,6.15a.872.872,0,0,0,.61.662.837.837,0,0,0,.854-.226l.836-.836a14.844,14.844,0,0,0,25-10.854v-.052c0-.386-.014-.765-.046-1.142a.871.871,0,0,0-.694-.779Zm0,0" transform="translate(-19.258 -202.911)" fill="#fff"/>
+             </g>
+           </svg>
+           </svg>
+        
+                   </button>
+           
+                   <button class="btnarrow">
+           <svg xmlns="http://www.w3.org/2000/svg" width="19.834" height="22.697" viewBox="0 0 19.834 22.697">
+             <g id="down-arrow" transform="translate(-8.862 22.697) rotate(180)">
+               <g id="Groupe_22" data-name="Groupe 22" transform="translate(-28.696)">
+                 <path id="Tracé_315" data-name="Tracé 315" d="M52.1,12.582a.474.474,0,0,0-.437-.292h-5.18V.473A.473.473,0,0,0,46.013,0H38.449a.473.473,0,0,0-.473.473V12.29h-5.2a.472.472,0,0,0-.335.806l9.43,9.462a.474.474,0,0,0,.669,0L52,13.1A.472.472,0,0,0,52.1,12.582Z" transform="translate(-32.304)" fill="#2a2f89"/>
+               </g>
+             </g>
+           </svg>
+                   </button>
+                   <button class="btnarrowdown">
+           <svg id="Groupe_22" data-name="Groupe 22" xmlns="http://www.w3.org/2000/svg" width="19.834" height="22.697" viewBox="0 0 19.834 22.697">
+             <path id="Tracé_315" data-name="Tracé 315" d="M52.1,12.582a.474.474,0,0,0-.437-.292h-5.18V.473A.473.473,0,0,0,46.013,0H38.449a.473.473,0,0,0-.473.473V12.29h-5.2a.472.472,0,0,0-.335.806l9.43,9.462a.474.474,0,0,0,.669,0L52,13.1A.472.472,0,0,0,52.1,12.582Z" transform="translate(-32.304)" fill="#6770cd"/>
+           </svg>
+                   </button>
+                   <button style="
+                   background-color:white;
+                   color: #191970;
+                   border: none;">
+         <span class="material-icons">
+          arrow_back_ios
+          </span>
+          
+           <label style="font-size:14px;margin-left: 15px;">0 - 0 de 0</label>
+                   </button>
+                   <button style="
+                   background-color:white;
+                   color: #191970;
+                   border: none;">
+         <span class="material-icons">
+          arrow_forward_ios
+          </span>
+                   </button>
+                   <button style="  background-color: #2A2F89;border: #1829C5;padding: 0;
+           ">
+           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" viewBox="0 0 32 40">
+             <g id="Groupe_75" data-name="Groupe 75" transform="translate(-1175 -5598)">
+               <rect id="Rectangle_639" data-name="Rectangle 639" width="28" height="40" rx="4" transform="translate(1175 5598)" fill="#2a2f89"/>
+               <g id="download" transform="translate(1157.058 5606.98)">
+                 <path id="Tracé_216" data-name="Tracé 216" d="M75.376,213.057h-.66c0,.255,0,1.111,0,1.356l.656,0a.677.677,0,1,0,0-1.353Z" transform="translate(-49.183 -203.101)" fill="#fff"/>
+                 <path id="Tracé_217" data-name="Tracé 217" d="M36.89,160.57H23.122v8.024H36.89Zm-10.7,4.741-.661,0v1.763H24.6v-4.988h1.6a1.611,1.611,0,1,1,0,3.222Zm3.949,1.7c-.317.006-1.612.011-1.612.011l-.012-4.863h0v-.007H30.1c1.23,0,2.056.978,2.056,2.434A2.2,2.2,0,0,1,30.142,167.008Zm5.274-3.97H33.784v1.039h1.5v.935h-1.5v2.05H32.85V162.1h2.565Z" transform="translate(0 -153.066)" fill="#fff"/>
+                 <path id="Tracé_218" data-name="Tracé 218" d="M159.323,214.339h-.644l.016,3c.237,0,.5,0,.652-.006.546-.01,1.1-.474,1.1-1.491C160.444,215.114,160.15,214.339,159.323,214.339Z" transform="translate(-129.222 -204.323)" fill="#fff"/>
+                 <path id="Tracé_219" data-name="Tracé 219" d="M64.18,3.55,61.5,6.231H64.18Z" transform="translate(-36.584 -3.384)" fill="#fff"/>
+                 <path id="Tracé_220" data-name="Tracé 220" d="M75.272,0H62.2V4.249H57.95V6.1H71.493V16.93H57.95v5.128H72.893l-1.73-2.282h2.482V12.27h1.628Z" transform="translate(-33.2)" fill="#fff"/>
+                 <path id="Tracé_221" data-name="Tracé 221" d="M404,300.066V292.56h-1.853v7.506h-1.062l1.988,2.623,1.988-2.623Z" transform="translate(-360.298 -278.888)" fill="#fff"/>
+               </g>
+             </g>
+           </svg>
+                   </button>
+              </div>
+         
+          
+             <table class="tab" style="width: 1300px;font-size: xx-small;" >
+             <tr>
+              
+                         <th class="row2">Référence client</th>
+                           <th class="row2">Code 
+         site</th>
+                         <th class="row2">STATUS</th>
+                  <th class="row2">Type 
+         de projet</th>
+                  <th class="row2">CDP
+         Aryatowers</th>
+                  <th class="row2">MOE
+         Aryatowers</th>
+                  <th class="row2">Début 
+         NDC Réelle</th>
+          <th class="row2">Commande
+         NDC-MOE Réelle</th>
+         <th class="row2">Fin 
+         NDC Réelle</th>
+         <th class="row2">Début
+         APD Réelle</th>
+         <th class="row2">Début
+         Travaux Réelle</th>
+         <th class="row2">Commande 
+         TRVX-MOE-Réelle</th>
+         <th class="row2">Fin
+         travaux Réelle</th>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+             </tr>
+              <tr>
+                   <th class="row1"></th>
+                   <th class="row1"></th>
+                   <th class="row1"></th>
+                   <th class="row1"></th>
+             </tr>
+             
+            
+         </table>
+ 
+         <!--==========================
+               Espace
+             ============================-->
+                 <div class="container" style="padding: 30px 0;"> 
+                 </div>
+         <!-- #Espace -->
+         <!-- retour au top -->
+                  <a href="#" class="back-to-top">
+                   <i class="fa fa-chevron-up"></i>
+                  </a>
+  <div >
+      <h1 style="
+      margin-top:50px;
+      color: black;
+      font-weight: bold;">
+      Conclusion
+      </h1>
+           <hr width="50px" style="
+           display: block;
+           height: 1px; 
+           border: 0;
+           border-top: 10px solid #191970;
+           margin: 0.5em 0;"> 
+    <div class="row ">
+  			<div class="col-md-3" id="row2">
+                  <label style="
+                  margin-top:10px;
+                  font-weight: bold;">
+                  Difference voilure m² entre actuel et projet:
+                  </label>
+                     <input type="text" name="" class="eb-input" disabled="disabled">
+  			</div>
+    </div>
+  </div>
+
+     <header class="section-header">
+          <h6 style="font-weight: bold;margin-top: 30px;font-size:medium ;">
+          conclusion
+          </h6>
+     </header>
+        
+  
+             <select class="listok" disabled="disabled">
+                 <option>OK</option>
+                 <option>NOK</option>
+             </select>
+  
