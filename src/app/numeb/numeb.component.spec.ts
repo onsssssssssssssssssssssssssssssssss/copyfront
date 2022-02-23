@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AffichageComponent } from './affichage.component';
+import { NumebComponent } from './numeb.component';
 
-describe('AffichageComponent', () => {
-  let component: AffichageComponent;
-  let fixture: ComponentFixture<AffichageComponent>;
+describe('NumebComponent', () => {
+  let component: NumebComponent;
+  let fixture: ComponentFixture<NumebComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AffichageComponent ]
+      declarations: [ NumebComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AffichageComponent);
+    fixture = TestBed.createComponent(NumebComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

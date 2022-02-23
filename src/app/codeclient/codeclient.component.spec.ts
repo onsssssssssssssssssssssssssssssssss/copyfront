@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SuivijallonComponent } from './suivijallon.component';
+import { CodeclientComponent } from './codeclient.component';
 
-describe('SuivijallonComponent', () => {
-  let component: SuivijallonComponent;
-  let fixture: ComponentFixture<SuivijallonComponent>;
+describe('CodeclientComponent', () => {
+  let component: CodeclientComponent;
+  let fixture: ComponentFixture<CodeclientComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SuivijallonComponent ]
+      declarations: [ CodeclientComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SuivijallonComponent);
+    fixture = TestBed.createComponent(CodeclientComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
