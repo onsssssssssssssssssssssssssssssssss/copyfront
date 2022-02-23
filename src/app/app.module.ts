@@ -15,13 +15,17 @@ import { CodeclientComponent } from './codeclient/codeclient.component';
 import { NumebComponent } from './numeb/numeb.component';
 import { siteservice } from './service/site.service';
 import { HttpClientModule } from '@angular/common/http';
+import { AjoutclientComponent } from './ajoutclient/ajoutclient.component';
+import { AjoutmoeComponent } from './ajoutmoe/ajoutmoe.component';
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
     SiteComponent,
     CodeclientComponent,
-    NumebComponent
+    NumebComponent,
+    AjoutclientComponent,
+    AjoutmoeComponent
   ],
   imports: [
     BrowserModule,
