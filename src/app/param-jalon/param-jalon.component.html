@@ -1,0 +1,57 @@
+
+ <section class="body">
+    <div class="container">
+        <h1 class="section-title">Liste <span>des prestations</span></h1>
+        <div class="filters-wrapper">
+          <div class="example-box" cdkDrag>
+            Drag me around
+          </div>
+            <form action="">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="filter-block">
+                            <label for="request_type">Prestations :</label>
+                            <div class="custom-select-wrapper">
+                                <select (change)="onChange($event)" class="custom-select" id="request_type" name="request_type" formControlName="typ">
+                                  <option value=""></option>
+                                  <option *ngFor="let opt of prestations" [value]="opt.id">
+                                    {{ opt.libelle }}
+                                  </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+  <div cdkDropListGroup>
+  <div class="example-container">
+    <h2>List des jalon</h2>
+
+    <div
+      cdkDropList
+      [cdkDropListData]="items"
+      class="example-list"
+      cdkDropListSortingDisabled
+      (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let item of items" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+  <div class="example-container">
+    <h2>Prestation</h2>
+
+    <div
+      cdkDropList
+      [cdkDropListData]="basket"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let item of basket" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+</div>
+</div>
+</form>
+</div>
+
+</div>
+
+</section>

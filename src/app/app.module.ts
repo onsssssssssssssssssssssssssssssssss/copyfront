@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import {DragDropModule} from "@angular/cdk/drag-drop";
 import { BrowserModule } from '@angular/platform-browser';
 import {MatButtonModule} from '@angular/material/button';
 import { AppRoutingModule ,routingComponents } from './app-routing.module';
@@ -11,12 +12,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SiteComponent } from './Site/site.component';
 import { AffichageComponent } from './affichage/affichage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ParamJalonComponent } from './param-jalon/param-jalon.component';
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
     SiteComponent,
-    AffichageComponent ,
+    AffichageComponent,
+    ParamJalonComponent ,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DragDropModule,
   ],
   exports: [BsDropdownModule, TooltipModule, ModalModule],
   providers: [],
