@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AffichageComponent } from './affichage.component';
+import { AjoutmoeComponent } from './ajoutmoe.component';
 
-describe('AffichageComponent', () => {
-  let component: AffichageComponent;
-  let fixture: ComponentFixture<AffichageComponent>;
+describe('AjoutmoeComponent', () => {
+  let component: AjoutmoeComponent;
+  let fixture: ComponentFixture<AjoutmoeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AffichageComponent ]
+      declarations: [ AjoutmoeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AffichageComponent);
+    fixture = TestBed.createComponent(AjoutmoeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

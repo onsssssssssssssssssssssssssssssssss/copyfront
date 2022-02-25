@@ -1,25 +1,4 @@
-#call-to-action{
-    margin-top: 50px;
-    margin-right: 60px;
-}
-.eb-input{
-    border-radius: 10px;
-      border-color:#000645;
-      width: 250px;
-height: 35px;
-}
-.btnnombreprojet{
-    border-radius: 10px;
-      border-color: #000645;
-      width:160px;
-      height: 35px;
-  }
-  .histo{
-    font-family: Poppins;
-    font-size: 16px;
-    color: #000645;
-  }
-  /* Back to top button */
+/* Back to top button */
 
 .back-to-top {
     position: fixed;
@@ -137,6 +116,7 @@ height: 35px;
   }
   
   
+  
   #intro2{
     display: table;
     width: 100%;
@@ -208,6 +188,24 @@ height: 35px;
     height: 45px;
     border-radius: 5px;
   }
+  .ajoutbtn2{
+    background-color:#A4A7CA ;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+  }
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 110%;
+    right: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
   .ajoutbtn1{
     background-color:#6770CD ;
     color: white;
@@ -477,6 +475,7 @@ height: 35px;
     background: rgba(0, 0, 0, 0.7);
     display: none;
   }
+  
   /* Mobile Nav body classes */
   
   body.mobile-nav-active {
@@ -631,7 +630,7 @@ height: 35px;
     border: solid;
     width: 1140px;
       margin: auto;
-          height: 1170px;
+          height: 850px;
             border-bottom-left-radius: 25px;
               border-bottom-right-radius: 25px;
   
@@ -678,173 +677,3 @@ height: 35px;
     font-size: 16px;
     color: #000645;
   }
-  .cadregeneral2 {
-    border: solid;
-    width: 1040px;
-    margin: auto;
-    height: 350px;
-     border: none;
-    }
-    #intro2{
-      display: table;
-      width: 100%;
-      margin-left: auto;
-    }
-   
-    table{
-      border: 1px solid #002D62;
-        border-radius:5px;
-         padding-bottom:25px;
-      }.table1{
-        border: none;
-      }
-      .row3{
-       background-color:#2A2F89;
-        color:white;
-        border: none;
-        font-size: small;
-        width: 85px;
-      }
-      .row1{
-        background-color: white;
-        color:#000645;
-        border: none;
-        height: 40px;
-      }
-      .row2{
-        background-color:#2A2F89;
-        color:white;
-        border: none;
-        font-size: small;
-      }
-      .filrebtn{
-        background-color:#2A2F89;
-        color: white;
-        width: 100px;
-        font-weight: bold;
-        border: #1829C5;
-      }
-      .searchbtn{
-        border:#191970 ;
-        background-color: white;
-        border: solid;
-        border-radius: 5px;
-      }
-      th{
-        background:#002D62;
-        color:white;
-        padding:12px;
-       
-      }
-      table{
-      border: 1px solid #002D62;
-        border-radius:5px;
-         padding-bottom:25px;
-      }.table1{
-        border: none;
-      }
-      .row3{
-       background-color:#2A2F89;
-        color:white;
-        border: none;
-        font-size: small;
-        width: 85px;
-      }
-      .row1{
-        background-color: white;
-        color:#000645;
-        border: none;
-        height: 40px;
-      }
-      .row2{
-        background-color:#2A2F89;
-        color:white;
-        border: none;
-        font-size: small;
-      }
-      .contentclient1 {
-          width: 100%;
-          margin: auto;
-          padding-bottom: 20px;
-          padding-right: inherit;
-          padding-left: 15px;
-          margin-top: 20px;
-          border-color: #191970;
-          border: solid;
-          border-radius: 5px;
-      }
-      .cadregeneral1 {
-          border: solid;
-          width: 1140px;
-          margin: auto;
-          height: 770px;
-          border-bottom-left-radius: 25px;
-          border-bottom-right-radius: 25px;
-      }
-      .btnnombreprojet{
-        border-radius: 10px;
-          border-color: #000645;
-          width:160px;
-          height: 35px;
-      }
-      .histo{
-        font-family: Poppins;
-        font-size: 16px;
-        color: #000645;
-      }
-      .logincontainer{
-          border: solid;
-          width: 790px;
-          margin: auto;
-          height: 600px;
-          border-bottom-left-radius: 25px;
-          border-bottom-right-radius: 25px;
-              border-top-left-radius: 25px;
-          border-top-right-radius: 25px;
-          border-color: #6770CD;
-      
-      }
-      .btnarrow{
-        color:#191970 ;
-        background-color: white;
-        border: none;
-      }
-      .btnarrowdown{
-        color:#9370DB;
-        background-color: white;
-        border: none;
-      }
-      .filrebtn{
-        background-color:#2A2F89;
-        color: white;
-        width: 100px;
-        font-weight: bold;
-        border: #1829C5;
-        margin-bottom: 25px;
-       position: absolute;
-      }
-      .searchbtn{
-        border:#191970 ;
-        background-color: white;
-        border: solid;
-        border-radius: 5px;
-      }
-      .notebtn{
-      color: white;
-        background-color: #000645;
-      }
-      #Conclusion{
-        padding: 60px 0;
-      }
-      
-      /*--------------------------------------------------------------
-      # OK-NOK
-      --------------------------------------------------------------*/
-      .listok{
-        width: 500px;
-        background-color:#000645;
-        color: white;
-        height: 30px;
-        margin-bottom: 100px;
-       
-      }

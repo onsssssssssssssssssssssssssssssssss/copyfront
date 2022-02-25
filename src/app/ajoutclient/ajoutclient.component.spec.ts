@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SuivijallonComponent } from './suivijallon.component';
+import { AjoutclientComponent } from './ajoutclient.component';
 
-describe('SuivijallonComponent', () => {
-  let component: SuivijallonComponent;
-  let fixture: ComponentFixture<SuivijallonComponent>;
+describe('AjoutclientComponent', () => {
+  let component: AjoutclientComponent;
+  let fixture: ComponentFixture<AjoutclientComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SuivijallonComponent ]
+      declarations: [ AjoutclientComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SuivijallonComponent);
+    fixture = TestBed.createComponent(AjoutclientComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

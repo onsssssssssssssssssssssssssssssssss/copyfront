@@ -5,6 +5,10 @@
 export const environment = {
   production: false,
   basePath: 'http://localhost:9090'
+<<<<<<< HEAD
+=======
+
+>>>>>>> 605aa4374500bde51d174e2f811bb0aa1837e92c
 };
 
 /*
