@@ -12,30 +12,28 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SiteComponent } from './Site/site.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-<<<<<<< HEAD
+
 import { ParamJalonComponent } from './param-jalon/param-jalon.component';
-=======
+
 import { CodeclientComponent } from './codeclient/codeclient.component';
 import { NumebComponent } from './numeb/numeb.component';
 import { siteservice } from './service/site.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AjoutclientComponent } from './ajoutclient/ajoutclient.component';
 import { AjoutmoeComponent } from './ajoutmoe/ajoutmoe.component';
->>>>>>> 605aa4374500bde51d174e2f811bb0aa1837e92c
+
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
     SiteComponent,
-<<<<<<< HEAD
-    AffichageComponent,
+   // AffichageComponent,
     ParamJalonComponent ,
-=======
     CodeclientComponent,
     NumebComponent,
     AjoutclientComponent,
-    AjoutmoeComponent
->>>>>>> 605aa4374500bde51d174e2f811bb0aa1837e92c
+    AjoutmoeComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -46,14 +44,11 @@ import { AjoutmoeComponent } from './ajoutmoe/ajoutmoe.component';
     ModalModule.forRoot(),
     ReactiveFormsModule,
     BrowserAnimationsModule,
-<<<<<<< HEAD
     DragDropModule,
-=======
     MatButtonModule,
     MatIconModule,
     HttpClientModule
->>>>>>> 605aa4374500bde51d174e2f811bb0aa1837e92c
-  ],
+ ],
   exports: [BsDropdownModule, TooltipModule, ModalModule],
   providers: [siteservice],
   bootstrap: [AppComponent]
