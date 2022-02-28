@@ -99,4 +99,13 @@
         </div>
       </div>
     <div>
-        <router-outlet></router-outlet>
+        <script src="plugins/smooth-scrollbar/scmooth-scrollbar.js"></script>
+        <script>
+          let options = {
+              continuousScrolling: true,
+              alwaysShowTracks: true
+          };
+          let Scrollbar = window.Scrollbar;
+          Scrollbar.init(document.querySelector('#scrollbarTable'), options);
+        </script>
+                <router-outlet></router-outlet>

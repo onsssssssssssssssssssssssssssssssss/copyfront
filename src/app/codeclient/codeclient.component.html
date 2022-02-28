@@ -1,3 +1,66 @@
+<div class="container">
+  <form
+  [formGroup]="form1"
+  class="form-container">
+   <div class="row" style="    margin-left: 3px;" >
+     <div class="col-md-3" id="row2">
+     
+          <label style="
+          margin-top:30px;
+          font-weight: bold;">
+           Numéro (EB) :
+          </label>
+             <input type="text" name="" class="eb-input"  id="valid"   />
+     </div>
+     <div class="col-md-3" id="row2">
+          <label style="
+          margin-top:30px;
+          font-weight: bold;">
+          Numéro commande
+          </label>
+             <input type="text" name="" class="eb-input"  name="code"
+         
+
+            />
+     </div>
+     <div class="col-md-3" id="row2">
+          <label style="
+          margin-top:30px;
+          font-weight: bold;">
+          </label>
+         
+          <label style="
+          margin-top:30px;
+          font-weight: bold;
+          font-family: Poppins;">
+          Code site:
+          </label>
+          <input type="text" name="" class="eb-input" *ngIf="x" (change)="onChange($event)" FormcontrolName="code">
+          </div>
+          <div class="col-md-3" id="row2">
+            <label style="
+            margin-top:30px;
+            font-weight: bold;
+            font-family: Poppins;">
+            </label>
+            <label style="
+            margin-top:30px;
+            font-weight: bold;"  for="request_type">
+            Client :
+            </label>
+            <select (change)="onChangeclient($event)" 
+            class="eb-input" id="request_type" name="request_type" FormcontrolName="clientt" *ngIf="xx"  >
+            <option >
+            
+            </option>
+
+              <option *ngFor="let z of clienttype"   >
+                {{z.name}}
+              </option>
+
+            </select>
+            </div>      
+  </div>
 <section id="intro2">
     <div style="margin-bottom: 30px;margin-top: 30px;" >
        
@@ -9,8 +72,7 @@
                  margin: 0.5em 0;
                  padding: 0;"> </div>
 </section>
- <table class="tab"  style="    width: 1150px;
-   ">
+ <table class="tab"  style="    width: 1150px;"  formControlName="clientx" >
  <tr>
  <th class="row2">Référence
     <br>Code client</th>
@@ -23,20 +85,22 @@
             <th class="row2">Date</th>
             <th class="row2">ID EB</th>
          <th class="row2"> Statut</th>  
-   
+
    
    
    
        </tr>
-        <tr>
+        <tr  *ngFor="let x of siteType1">
+          <th  class="row1">{{ x.id}}</th>
+          <th  class="row1">{{ x.name}}</th>
              <th class="row1"></th>
              <th class="row1"></th>
              <th class="row1"></th>
              <th class="row1"></th>
              <th class="row1"></th>
              <th class="row1"></th>
-             <th class="row1"></th>
-             <th class="row1"></th>
+            
+
    
        </tr>
        

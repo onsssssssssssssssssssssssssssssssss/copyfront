@@ -13,7 +13,7 @@ import { SiteComponent } from './Site/site.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CodeclientComponent } from './codeclient/codeclient.component';
 import { NumebComponent } from './numeb/numeb.component';
-import { siteservice } from './service/site.service';
+import {siteService } from './service/site.service';
 import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
@@ -37,7 +37,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ],
   exports: [BsDropdownModule, TooltipModule, ModalModule],
-  providers: [siteservice],
+  providers: [siteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

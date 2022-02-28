@@ -10,7 +10,7 @@
             font-weight: bold;">
              Numéro (EB) :
             </label>
-               <input type="text" name="" class="eb-input"  id="valid"  formControlName="eb" *ngIf="x"(change)="onChange($event)" />
+               <input type="text" name="" class="eb-input"  id="valid"   />
        </div>
        <div class="col-md-3" id="row2">
             <label style="
@@ -19,7 +19,7 @@
             Numéro commande
             </label>
                <input type="text" name="" class="eb-input"  name="code"
-               formControlName="numcommande"  
+           
 
               />
        </div>
@@ -35,7 +35,7 @@
             font-family: Poppins;">
             Code site:
             </label>
-            <input type="text" name="" class="eb-input"   formControlName="codesite" *ngIf="codes"(change)="onChangecodesite($event)">
+            <input type="text" name="" class="eb-input" *ngIf="x" (change)="onChange($event)" FormcontrolName="code">
             </div>
             <div class="col-md-3" id="row2">
               <label style="
@@ -43,13 +43,21 @@
               font-weight: bold;
               font-family: Poppins;">
               </label>
-             
               <label style="
               margin-top:30px;
-              font-weight: bold;">
-            Client :
+              font-weight: bold;"  for="request_type">
+              Client :
               </label>
-              <input type="text" name="" class="eb-input"   formControlName="client"  *ngIf="client"(change)="onChangecodeclient($event)">
+              <select (change)="onChange2($event)" 
+              class="eb-input" id="request_type" name="request_type" FormcontrolName="clientt"  >
+              <option >
+              
+              </option>
+                <option *ngFor="let z of clienttype"   >
+                  {{z.name}}
+                </option>
+
+              </select>
               </div>      
     </div>
            <hr style=" width: 90%;
@@ -59,12 +67,10 @@
            border: #191970;"/>
      <!--  General informations of the site-->
      <div >
-     <ng-container *ngComponentOutlet="comp" ></ng-container>
-      <router-outlet> 
 
 <div >
   <form action="">
-<table style="  width: -webkit-fill-available;margin-left: 20px;" formControlName="typ" >
+<table style="  width: -webkit-fill-available;margin-left: 20px;" formControlName="typ"  >
   <tr >
     <th class="row2">Référence <br> Code client </th>
     <th class="row2">Libéllé </th>
@@ -78,19 +84,15 @@
 
   </tr>
   
-  <tr style="height:50px;"*ngFor="let c of details">
-      <th  class="row1">{{ c.id }}</th>
-      <th   class="row1">{{ c.eb }}</th>
-      <th  class="row1">{{ c.codesite }}</th>
-      <th  class="row1">{{ c.numcommande }}</th>
-      <th  class="row1">{{ c.CDP }}</th>
-      <th  class="row1">{{ c.Designation }}</th>
-      <th class="row1">{{ c.DatecommandeBS }}</th>
-      <th class="row1">{{ c.Datefin }}</th>
-      <th class="row1">{{ c.commentaire }}</th>
+  <tr style="height:50px;"*ngFor="let c of sitetype " >
+      <th  class="row1">{{ c.id}}</th>
+      <th  class="row1">{{ c.name}}</th>
+
+    
 
   </tr>
  </table>
+ 
 <section id="call-to-action" >
     <div class="container" >
       <h1 style="font-weight: bold;">
@@ -112,7 +114,7 @@
             font-weight: bold;">
             Hauteur Pylone/Pylonet:
             </label>
-                <input type="text" name="" class="eb-input" disabled="disabled">
+                <input type="text" name="" class="eb-input"  formControlName="Hauteur" #hauteur >
         </div>
         <div class="col-md-3" id="row2">
             <label style="
@@ -120,7 +122,7 @@
             font-weight: bold;">
             Modele de Pylone:
             </label>
-                <input type="text" name="" class="eb-input" disabled="disabled">
+                <input type="text" name="" class="eb-input"  formControlName="modele"  #modele >
         </div>
         <div class="col-md-3" >
             <label style="
@@ -323,7 +325,11 @@
              <div style="margin-bottom: 20px;">
                   <button mat-button
                     class="m-0 mr-16 secondary-text" class="filrebtn">
-                    <mat-icon>arrow_drop_up</mat-icon>Filtre
+                    <span class="material-icons">
+                     
+                    arrow_drop_up
+                      </span>
+                    Filtre
                  </button>
                
                     
@@ -451,8 +457,11 @@
              <div style="margin-bottom: 20px;">
               <button mat-button
                 class="m-0 mr-16 secondary-text" class="filrebtn">
-                <mat-icon>arrow_drop_up</mat-icon>Filtre
-             </button>
+                <span class="material-icons">
+                     
+                  arrow_drop_up
+                    </span>
+                  Filtre             </button>
            
                 
                  <button style="background-color: white;padding: 0;border: none;margin-left: 110px; margin-right: 8px;" >
@@ -575,10 +584,12 @@
              <div style="margin-bottom: 20px;    margin-left: 200px;">
               <button mat-button
                 class="m-0 mr-16 secondary-text" class="filrebtn">
-                <mat-icon>arrow_drop_up</mat-icon>Filtre
-             </button>
-           
-                
+                <span class="material-icons">
+                     
+                  arrow_drop_up
+                    </span>
+                  Filtre             
+                </button>
                  <button style="background-color: white;padding: 0;border: none;margin-left: 110px; margin-right: 8px;color: #191970;" >
                   <span class="material-icons">
                         search
